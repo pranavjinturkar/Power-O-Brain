@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-fromGradientBlue: #00a3ff;
+  --color-toGradientBlue: #4d6aff;
+  --color-borderColor: #0b76db;
+  --color-carouselColor: #0c121f;
+  --color-carouselColor2: #0c1a40;
+  --color-carouselBorder: #0c2643;
+  --animate-infinite-spin: infinite-spin 40s linear infinite;
+
+  @keyframes infinite-spin {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-150% - 20px));
+    }
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
