@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-around items-center py-10">
       <h1 className="font-bold text-3xl ">Power-O-Brain</h1>
-      <div className="flex gap-8 items-center invisible md:visible">
+      <div className="gap-8 items-center hidden md:flex max-w-7xl">
         <a
           href="#features"
           className="text-lg text-gray-600 cursor-pointer hover:text-blue-600"
