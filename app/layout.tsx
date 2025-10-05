@@ -1,24 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Nunito, Roboto } from "next/font/google";
+import { Open_Sans, Nunito, Roboto, Fredoka } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const nunito = Nunito({
   variable: "--font-nunito",
   subsets: ["latin"],
 });
 
+// Configure Roboto
 const roboto = Roboto({
   variable: "--font-roboto",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
+
+const openSans = Open_Sans({
+  variable: "--font-openSans",
+  subsets: ["latin"],
+});
+
+const fredoka = Fredoka({
+  variable: "--font-fredoka",
   subsets: ["latin"],
 });
 
@@ -35,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${nunito.variable} ${roboto.variable} antialiased`}
+        className={`${roboto.variable} ${nunito.variable} ${openSans.variable} ${fredoka.variable} antialiased`}
       >
         {children}
       </body>

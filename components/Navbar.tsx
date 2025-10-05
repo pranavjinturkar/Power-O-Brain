@@ -22,13 +22,13 @@ const Navbar = (props: Props) => {
   return (
     <div className="w-full bg-white py-4 px-8 flex items-center justify-evenly">
       {/* Logo */}
-      <div className="flex items-center gap-2 text-2xl font-semibold text-teal-600 font-serif">
+      <div className="flex items-center gap-2 text-2xl font-bold text-teal-500 font-openSans">
         <BrainIcon size={36} />
         <h3 className="">Power O Brain</h3>
       </div>
       <div className="flex items-center md:gap-6 xl:gap-8">
         {navTitles.map((item, index) => (
-          <p key={index} className="text-lg">{item.label}</p>
+          <p key={index} className="text-lg font-roboto">{item.label}</p>
         ))}
       </div>
     </div>
