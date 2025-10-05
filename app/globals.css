@@ -10,6 +10,6 @@
 }
 
 
-.transition {
+.basic-transition {
    @apply transition-all duration-300
 }

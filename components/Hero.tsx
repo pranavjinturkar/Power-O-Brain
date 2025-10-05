@@ -41,7 +41,7 @@ const Hero = () => {
             Abacus programs boost memory, concentration, and mathematical skills
             through fun, engaging methods.
           </h3>
-          <button className="bg-primaryCyan text-white font-roboto font-semibold px-6 py-3 rounded-full text-xl cursor-pointer hover:bg-primaryCyan/80 transition shadow-lg">
+          <button className="bg-primaryCyan text-white font-roboto font-semibold px-6 py-3 rounded-full text-xl cursor-pointer hover:bg-primaryCyan/80 basic-transition shadow-lg">
             Book Free Demo Class
           </button>
         </div>
