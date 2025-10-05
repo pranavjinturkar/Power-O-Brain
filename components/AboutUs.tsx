@@ -54,8 +54,8 @@ const AboutUs = () => {
       {/* Heading */}
       <Header
         title="About Power O Brain"
-        description={`We are passionate about unlocking every child's potential through
-         innovative Abacus education methods.`}
+        description="We are passionate about unlocking every child&apos;s potential through
+         innovative Abacus education methods."
       />
       {/* Our Story */}
       <div className="flex flex-col lg:flex-row items-center justify-center gap-16 px-10 lg:px-32">
