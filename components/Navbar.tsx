@@ -1,7 +1,7 @@
 "use client";
 import { BrainIcon } from "@phosphor-icons/react";
 
-type Props = {};
+
 type Navbar = {
   id: string;
   label: string;
@@ -18,7 +18,7 @@ const navTitles: Navbar[] = [
   { id: "Contact", label: "Contact" },
 ];
 
-const Navbar = (props: Props) => {
+const Navbar = () => {
   return (
     <div className="w-full bg-white py-4 px-8 flex items-center justify-evenly">
       {/* Logo */}

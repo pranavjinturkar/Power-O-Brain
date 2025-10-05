@@ -8,3 +8,8 @@
 
   --color-primaryCyan: #4bd4e1;
 }
+
+
+.transition {
+   @apply transition-all duration-300
+}
