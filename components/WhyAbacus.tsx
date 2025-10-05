@@ -49,26 +49,30 @@ const abacusFeatures: AbacusFeaturesProps[] = [
 
 const WhyAbacus = () => {
   return (
-    <section className="py-24 space-y-20 w-full bg-gradient-to-br from-[#667eea] to-[#764ba2]" id="why-abacus">
+    <section
+      className="py-16 sm:py-20 md:py-24 space-y-12 sm:space-y-16 w-full bg-gradient-to-br from-[#667eea] to-[#764ba2]"
+      id="why-abacus"
+    >
       <Header
         title="Why Choose Abacus Learning?"
         description="Discover the incredible benefits of Abacus education for your child's brain development."
         titleStyle="text-white"
         descStyle="text-white"
       />
-      <div className="w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16 px-6 md:px-16">
+
+      <div className="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 mt-12 sm:mt-16 px-4 sm:px-6 md:px-16">
         {abacusFeatures.map((feature, idx) => (
           <div
             key={idx}
-            className="relative flex flex-col p-6 rounded-2xl bg-white/10 backdrop-blur-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-white/20"
+            className="relative flex flex-col p-5 sm:p-6 md:p-6 rounded-2xl bg-white/10 backdrop-blur-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-white/20"
           >
-            <div className="w-14 h-14 rounded-full bg-primaryCyan flex items-center justify-center shadow-md mb-4">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-primaryCyan flex items-center justify-center shadow-md mb-4">
               {feature.icon}
             </div>
-            <h3 className="text-2xl font-nunito font-bold text-white mb-2">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-nunito font-bold text-white mb-2">
               {feature.title}
             </h3>
-            <p className="text-white/90 font-roboto text-base">
+            <p className="text-white/90 font-roboto text-sm sm:text-base md:text-base">
               {feature.description}
             </p>
           </div>

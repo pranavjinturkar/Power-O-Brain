@@ -77,41 +77,47 @@ const testimonials: TestimonialsProps[] = [
 
 const Testimonials = () => {
   return (
-    <section className="py-24 space-y-20 w-full bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]" id="testimonials">
+    <section
+      className="py-16 sm:py-20 md:py-24 space-y-12 sm:space-y-16 w-full bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]"
+      id="testimonials"
+    >
       <Header
         title="What Parents Say"
         description="Hear from our satisfied parents about their children's amazing progress."
       />
-      <div className="mt-16 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-16">
+
+      <div className="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 px-4 sm:px-6 md:px-16">
         {testimonials.map((t) => (
           <div
             key={t.id}
-            className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 flex flex-col justify-between h-full hover:scale-105"
+            className="bg-white rounded-2xl p-5 sm:p-6 md:p-6 shadow-md hover:shadow-lg transition-all duration-300 flex flex-col justify-between h-full hover:scale-105"
           >
             {/* Quote icon */}
-              <p className="text-6xl text-primaryCyan w-fit h-fit font-fredoka">
-                “
-              </p>
+            <p className="text-5xl sm:text-6xl text-primaryCyan w-fit h-fit font-fredoka mb-2">
+              “
+            </p>
 
             {/* Review text */}
-            <p className="text-gray-800 font-openSans text-base mb-6">
+            <p className="text-gray-800 font-openSans text-sm sm:text-base mb-6">
               {t.review}
             </p>
 
             {/* Profile */}
-            <div className="flex items-center gap-4 mt-auto">
+            <div className="flex items-center gap-3 sm:gap-4 mt-auto">
               <Image
                 src={t.image}
                 alt={t.name}
                 width={48}
                 height={48}
-                className="w-12 h-12 rounded-full object-cover"
+                className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover"
               />
               <div>
-                <h4 className="text-gray-900 font-nunito font-bold">
+                <h4 className="text-gray-900 font-nunito font-bold text-sm sm:text-base">
                   {t.name}
                 </h4>
-                <p className="text-gray-500 font-roboto text-sm">{t.role}</p>
+                <p className="text-gray-500 font-roboto text-xs sm:text-sm">
+                  {t.role}
+                </p>
               </div>
             </div>
           </div>

@@ -21,10 +21,7 @@ const socialMediaIcons = [
     icon: <InstagramLogoIcon weight="bold" className="icon-style" />,
     link: "#",
   },
-  {
-    icon: <XLogoIcon weight="bold" className="icon-style" />,
-    link: "#",
-  },
+  { icon: <XLogoIcon weight="bold" className="icon-style" />, link: "#" },
   {
     icon: <LinkedinLogoIcon weight="bold" className="icon-style" />,
     link: "#",
@@ -32,54 +29,24 @@ const socialMediaIcons = [
 ];
 
 const programsDetails = [
-  {
-    label: "Foundation Level",
-    href: "programs",
-  },
-  {
-    label: "Beginner Level",
-    href: "programs",
-  },
-  {
-    label: "Intermediate Level",
-    href: "programs",
-  },
-  {
-    label: "Advanced Level",
-    href: "programs",
-  },
-  {
-    label: "Franchise",
-    href: "franchise",
-  },
+  { label: "Foundation Level", href: "programs" },
+  { label: "Beginner Level", href: "programs" },
+  { label: "Intermediate Level", href: "programs" },
+  { label: "Advanced Level", href: "programs" },
+  { label: "Franchise", href: "franchise" },
 ];
 
 const quickLinks = [
-  {
-    label: "AboutUs",
-    href: "about",
-  },
-  {
-    label: "Programs",
-    href: "programs",
-  },
-  {
-    label: "Gallery",
-    href: "gallery",
-  },
-  {
-    label: "Testimonials",
-    href: "testimonials",
-  },
-  {
-    label: "FQAs",
-    href: "fqa",
-  },
+  { label: "AboutUs", href: "about" },
+  { label: "Programs", href: "programs" },
+  { label: "Gallery", href: "gallery" },
+  { label: "Testimonials", href: "testimonials" },
+  { label: "FQAs", href: "fqa" },
 ];
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0f172a] text-gray-300 py-16 px-6 md:px-20 lg:px-32">
+    <footer className="bg-[#0f172a] text-gray-300 py-16 px-6 sm:px-10 md:px-20 lg:px-32">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* Brand */}
         <div>
@@ -93,7 +60,7 @@ const Footer = () => {
               Power O Brain
             </h2>
           </div>
-          <p className="text-gray-400 leading-relaxed mb-6 font-roboto">
+          <p className="text-gray-400 leading-relaxed mb-6 font-roboto text-sm sm:text-base">
             Unlocking your child’s brain power through innovative Abacus
             education methods.
           </p>
@@ -101,7 +68,11 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="flex gap-4">
             {socialMediaIcons.map((item, index) => (
-              <a key={index} href={item.link} className="">
+              <a
+                key={index}
+                href={item.link}
+                className="hover:text-primaryCyan transition-colors"
+              >
                 {item.icon}
               </a>
             ))}
@@ -113,7 +84,7 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-4 text-white font-nunito">
             Quick Links
           </h3>
-          <ul className="space-y-2 font-roboto">
+          <ul className="space-y-2 font-roboto text-sm sm:text-base">
             {quickLinks.map((link, i) => (
               <li key={i}>
                 <a
@@ -132,7 +103,7 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-4 text-white font-nunito">
             Programs
           </h3>
-          <ul className="space-y-2 font-roboto">
+          <ul className="space-y-2 font-roboto text-sm sm:text-base">
             {programsDetails.map((program, i) => (
               <li key={i}>
                 <a
@@ -151,7 +122,7 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-4 text-white font-nunito">
             Contact Info
           </h3>
-          <ul className="space-y-3 font-roboto text-gray-400">
+          <ul className="space-y-3 font-roboto text-gray-400 text-sm sm:text-base">
             <li className="flex items-start gap-3">
               <MapPinIcon size={20} className="text-primaryCyan mt-1" />
               <span>123 Education Street, Downtown City, State 12345</span>
@@ -173,7 +144,7 @@ const Footer = () => {
       </div>
 
       {/* Divider */}
-      <div className="mt-16 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+      <div className="mt-16 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm sm:text-base">
         © {new Date().getFullYear()} Power O Brain. All rights reserved.
       </div>
     </footer>

@@ -85,7 +85,7 @@ const Programs = () => {
         title="Our Programs"
         description="Comprehensive Abacus training programs designed for different age groups and skill levels."
       />
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-6 md:px-16">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-10 px-6 md:px-16">
         {allPrograms.map((program, idx) => (
           <div
             key={idx}

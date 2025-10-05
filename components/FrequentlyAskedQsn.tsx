@@ -44,24 +44,24 @@ const FrequentlyAskedQsn = () => {
   };
 
   return (
-    <section className="py-24 w-full bg-gradient-to-b from-white to-[#f8f9fa]">
+    <section className="py-16 sm:py-20 md:py-24 w-full bg-gradient-to-b from-white to-[#f8f9fa]">
       <Header
         title="Frequently Asked Questions"
         description="Find answers to common questions about our Abacus learning programs."
       />
 
-      <div className="max-w-4xl mx-auto mt-10 space-y-4 px-4">
+      <div className="max-w-4xl mx-auto mt-10 space-y-4 px-4 sm:px-6 md:px-8">
         {faqs.map((faq) => (
           <div
             key={faq.id}
-            className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden transition-all duration-300 hover:bg-gray-100"
+            className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden transition-all duration-300 hover:bg-gray-50"
           >
             {/* Question */}
             <button
               onClick={() => toggleFAQ(faq.id)}
-              className="w-full flex justify-between items-center px-6 py-5 text-left focus:outline-none"
+              className="w-full flex justify-between items-center px-4 sm:px-6 py-4 sm:py-5 text-left focus:outline-none"
             >
-              <h3 className="text-lg md:text-xl font-semibold text-gray-800 font-nunito">
+              <h3 className="text-base sm:text-lg md:text-xl font-semibold text-gray-800 font-nunito">
                 {faq.question}
               </h3>
               <span className="text-primaryCyan transition-transform duration-300">
@@ -75,13 +75,13 @@ const FrequentlyAskedQsn = () => {
 
             {/* Answer */}
             <div
-              className={`px-6 transition-all duration-500 ease-in-out ${
+              className={`px-4 sm:px-6 transition-all duration-500 ease-in-out ${
                 activeId === faq.id
-                  ? "max-h-40 opacity-100 py-3"
-                  : "max-h-0 opacity-0"
+                  ? "max-h-96 opacity-100 py-3 sm:py-4"
+                  : "max-h-0 opacity-0 py-0"
               } overflow-hidden`}
             >
-              <p className="text-gray-600 text-base leading-relaxed font-roboto">
+              <p className="text-gray-600 text-sm sm:text-base leading-relaxed font-roboto">
                 {faq.answer}
               </p>
             </div>

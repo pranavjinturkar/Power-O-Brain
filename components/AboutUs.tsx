@@ -50,23 +50,29 @@ const aboutPoints: AboutPoints[] = [
 
 const AboutUs = () => {
   return (
-    <section className="py-24 space-y-20 w-full bg-[#f8f9fa]" id="about">
+    <section
+      className="py-16 sm:py-24 space-y-12 sm:space-y-20 w-full bg-[#f8f9fa]"
+      id="about"
+    >
       {/* Heading */}
       <Header
         title="About Power O Brain"
-        description="We are passionate about unlocking every child&apos;s potential through
+        description="We are passionate about unlocking every child's potential through
          innovative Abacus education methods."
       />
+
       {/* Our Story */}
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-16 px-10 lg:px-32">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-16 px-5 sm:px-10 lg:px-32">
         {/* Left Column (Text) */}
-        <div className="flex flex-col gap-10 max-w-xl">
+        <div className="flex flex-col gap-8 sm:gap-10 w-full lg:w-1/2">
           {aboutPoints.map((point, i) => (
-            <div key={i} className="flex items-start gap-5">
-              <div className="">{point.icon}</div>
+            <div key={i} className="flex items-start gap-4 sm:gap-5">
+              <div>{point.icon}</div>
               <div>
-                <h3 className="text-2xl font-semibold mb-2">{point.title}</h3>
-                <p className="text-gray-700 leading-relaxed">
+                <h3 className="text-xl sm:text-2xl font-semibold mb-1 sm:mb-2">
+                  {point.title}
+                </h3>
+                <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
                   {point.description}
                 </p>
               </div>
@@ -75,11 +81,11 @@ const AboutUs = () => {
         </div>
 
         {/* Right Column (Image) */}
-        <div className="flex justify-center">
+        <div className="flex justify-center w-full lg:w-1/2 mt-8 lg:mt-0">
           <Image
             src={AboutImg}
             alt="About Power O Brain"
-            className="rounded-2xl shadow-lg max-w-sm lg:max-w-md w-full"
+            className="rounded-2xl shadow-lg w-72 sm:w-96 md:w-[28rem] lg:w-full max-w-md lg:max-w-lg"
           />
         </div>
       </div>
