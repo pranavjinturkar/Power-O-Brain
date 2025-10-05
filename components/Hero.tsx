@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import Abacus from "@/public/Abacus.png";
 
-
 type ExperienceTrained = {
   label: string;
   count: number;
@@ -29,11 +28,11 @@ const experience: ExperienceTrained[] = [
 
 const Hero = () => {
   return (
-    <section className="mt-24 space-y-20 w-full">
-      <div className="w-full justify-center flex px-32">
+    <section className="py-24 w-full bg-gradient-to-br from-purple-500 to-sky-700 ">
+      <div className="w-full justify-center flex px-32 mb-48">
         <div className="w-full flex flex-col gap-10 items-start">
           <h1 className="text-6xl text-white font-bold font-fredoka">
-            Unlock Your Child's <br />
+            Unlock Your Child&apos;s <br />
             <span className="text-[#fedc65]">Brain Power</span> with <br />
             Abacus!
           </h1>

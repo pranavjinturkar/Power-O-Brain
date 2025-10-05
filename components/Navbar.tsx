@@ -22,8 +22,8 @@ const Navbar = () => {
   return (
     <div className="w-full bg-white py-4 px-8 flex items-center justify-evenly">
       {/* Logo */}
-      <div className="flex items-center gap-2 text-2xl font-bold text-teal-500 font-openSans">
-        <BrainIcon size={36} />
+      <div className="flex items-center gap-2 text-2xl font-bold text-primaryCyan font-openSans">
+        <BrainIcon size={36} weight="duotone" />
         <h3 className="">Power O Brain</h3>
       </div>
       <div className="flex items-center md:gap-6 xl:gap-8">
