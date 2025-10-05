@@ -6,7 +6,8 @@ import {
   UsersThreeIcon,
 } from "@phosphor-icons/react";
 import Image from "next/image";
-import AboutImg from '@/public/AboutImg.jpeg'
+import AboutImg from "@/public/AboutImg.jpeg";
+import Header from "./Header";
 
 type AboutPoints = {
   icon: React.ReactNode;
@@ -51,13 +52,11 @@ const AboutUs = () => {
   return (
     <section className="py-24 space-y-20 w-full bg-[#f8f9fa]">
       {/* Heading */}
-      <div className="mx-auto flex flex-col items-center gap-6">
-        <h1 className="text-5xl font-bold font-fredoka">About Power O Brain</h1>
-        <h3 className="text-xl text-center">
-          We are passionate about unlocking every child&apos;s potential through{" "}
-          <br /> innovative Abacus education methods.
-        </h3>
-      </div>
+      <Header
+        title="About Power O Brain"
+        description={`We are passionate about unlocking every child's potential through
+         innovative Abacus education methods.`}
+      />
       {/* Our Story */}
       <div className="flex flex-col lg:flex-row items-center justify-center gap-16 px-10 lg:px-32">
         {/* Left Column (Text) */}
