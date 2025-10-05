@@ -36,7 +36,7 @@ const franchiseFeatures: FranchiseProps[] = [
 
 const FranchiseOpp = () => {
   return (
-    <section className="py-24 space-y-20 w-full bg-gradient-to-br from-[#a8edea] to-[#fed6e3]">
+    <section className="py-24 space-y-20 w-full bg-gradient-to-br from-[#a8edea] to-[#fed6e3]" id="franchise">
       <Header
         title="Franchise Opportunities"
         description="Join our growing network and bring the power of Abacus education to your community."
@@ -49,17 +49,17 @@ const FranchiseOpp = () => {
           <div className="flex flex-col gap-4">
             {franchiseFeatures.map((item, index) => (
               <div
-                className="p-4 bg-white/30 rounded-2xl backdrop-blur-md flex flex-col gap-4 shadow-lg basic-transition hover:shadow-2xl"
+                className="p-4 bg-white/30 rounded-2xl backdrop-blur-md flex flex-col gap-4 shadow-lg basic-transition hover:shadow-2xl border-2 border-white/30"
                 key={index}
               >
-                <div className="bg-primaryCyan p-4 flex items-center justify-center rounded-full w-fit">
-                  <p className="text-2xl ">{item.icon}</p>
+                <div className="bg-primaryCyan p-4 flex items-center justify-center rounded-full w-fit shadow-lg">
+                  <p className="text-2xl">{item.icon}</p>
                 </div>
                 <div className="space-y-1">
                   <h3 className="text-xl font-openSans text-black font-semibold">
                     {item.label}
                   </h3>
-                  <p className="text-sm font-roboto text-black/50">
+                  <p className="text-base font-roboto text-black/50">
                     {item.description}
                   </p>
                 </div>

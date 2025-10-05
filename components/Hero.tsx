@@ -28,7 +28,7 @@ const experience: ExperienceTrained[] = [
 
 const Hero = () => {
   return (
-    <section className="py-24 w-full bg-gradient-to-br from-purple-500 to-sky-700 ">
+    <section className="py-24 pt-40 w-full bg-gradient-to-br from-purple-500 to-sky-700" id="home">
       <div className="w-full justify-center flex px-32 mb-48">
         <div className="w-full flex flex-col gap-10 items-start">
           <h1 className="text-6xl text-white font-bold font-fredoka">

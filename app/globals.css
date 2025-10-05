@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @theme {
   --font-roboto: "Roboto", sans-serif;
   --font-nunito: "Nunito", sans-serif;
@@ -9,7 +13,10 @@
   --color-primaryCyan: #4bd4e1;
 }
 
-
 .basic-transition {
-   @apply transition-all duration-300
+  @apply transition-all duration-300;
+}
+
+.icon-style {
+  @apply size-10 text-white hover:text-primaryCyan duration-200 transition-all;
 }

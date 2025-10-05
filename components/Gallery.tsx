@@ -8,7 +8,7 @@ const images = [AbacusImg, AboutUs, AbacusImg, AboutUs, AbacusImg, AboutUs];
 
 const Gallery = () => {
   return (
-    <section className="py-24 space-y-20 w-full bg-white">
+    <section className="py-24 space-y-20 w-full bg-white" id="gallery">
       <Header
         title="Gallery"
         description="Take a peek into our vibrant learning environment and see our students in action."

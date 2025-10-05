@@ -80,7 +80,7 @@ const allPrograms: AllPrograms[] = [
 
 const Programs = () => {
   return (
-    <section className="py-24 space-y-20 w-full bg-white">
+    <section className="py-24 space-y-20 w-full bg-white" id="programs">
       <Header
         title="Our Programs"
         description="Comprehensive Abacus training programs designed for different age groups and skill levels."

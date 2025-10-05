@@ -49,7 +49,7 @@ const abacusFeatures: AbacusFeaturesProps[] = [
 
 const WhyAbacus = () => {
   return (
-    <section className="py-24 space-y-20 w-full bg-gradient-to-br from-[#667eea] to-[#764ba2]">
+    <section className="py-24 space-y-20 w-full bg-gradient-to-br from-[#667eea] to-[#764ba2]" id="why-abacus">
       <Header
         title="Why Choose Abacus Learning?"
         description="Discover the incredible benefits of Abacus education for your child's brain development."

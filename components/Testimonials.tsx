@@ -77,7 +77,7 @@ const testimonials: TestimonialsProps[] = [
 
 const Testimonials = () => {
   return (
-    <section className="py-24 space-y-20 w-full bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]">
+    <section className="py-24 space-y-20 w-full bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]" id="testimonials">
       <Header
         title="What Parents Say"
         description="Hear from our satisfied parents about their children's amazing progress."

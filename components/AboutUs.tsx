@@ -50,7 +50,7 @@ const aboutPoints: AboutPoints[] = [
 
 const AboutUs = () => {
   return (
-    <section className="py-24 space-y-20 w-full bg-[#f8f9fa]">
+    <section className="py-24 space-y-20 w-full bg-[#f8f9fa]" id="about">
       {/* Heading */}
       <Header
         title="About Power O Brain"
